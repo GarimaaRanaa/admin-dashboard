@@ -4,10 +4,12 @@ import { Button } from "@/components/ui/Button";
 
 export function Hero() {
   return (
-    <section className="py-20 text-center" style={{ backgroundColor: `${theme.colors.primary}10` }}>
-      <h1 className="text-4xl font-bold">{theme.brandName}</h1>
-      <p className="text-gray-600 mt-3">Replace this subtitle with the real homepage headline.</p>
-      <div className="mt-6">
+    <section className="px-4 py-12 text-center sm:py-16" style={{ backgroundColor: `${theme.colors.primary}10` }}>
+      <h1 className="text-3xl font-bold text-gray-950 sm:text-4xl">{theme.brandName}</h1>
+      <p className="mx-auto mt-3 max-w-2xl text-gray-600">
+        A reusable admin UI system for dashboards, content management, reports, and client-ready modules.
+      </p>
+      <div className="mt-6 flex justify-center">
         <Button label="Get Started" />
       </div>
     </section>
