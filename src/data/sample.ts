@@ -3,14 +3,17 @@ import {
   Activity,
   BarChart3,
   Bell,
+  Boxes,
   FileText,
   Folder,
   LayoutDashboard,
+  LineChart,
   Settings,
   Shield,
   Upload,
   UserPlus,
   Users,
+  UserCircle,
 } from "lucide-react";
 import type { ActivityItem, ChartPoint, KpiMetric, NavItem, QuickAction, RecordItem } from "@/types";
 
@@ -21,13 +24,17 @@ export const sampleItems = [
 ];
 
 export const dashboardNavItems: NavItem[] = [
-  { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-  { label: "Users", href: "/users", icon: Users },
-  { label: "Roles", href: "/roles", icon: Shield },
-  { label: "Content", href: "/content", icon: FileText },
-  { label: "Media", href: "/media", icon: Folder },
-  { label: "Reports", href: "/reports", icon: BarChart3 },
-  { label: "Settings", href: "/settings", icon: Settings },
+  { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard, group: "Overview" },
+  { label: "Analytics", href: "/analytics", icon: LineChart, group: "Overview" },
+  { label: "Reports", href: "/reports", icon: BarChart3, group: "Overview" },
+  { label: "Users", href: "/users", icon: Users, group: "Management" },
+  { label: "Roles", href: "/roles", icon: Shield, group: "Management" },
+  { label: "Categories", href: "/categories", icon: Boxes, group: "Management" },
+  { label: "Content", href: "/content", icon: FileText, group: "Management" },
+  { label: "Media", href: "/media", icon: Folder, group: "Management" },
+  { label: "Notifications", href: "/notifications", icon: Bell, group: "Workspace" },
+  { label: "Settings", href: "/settings", icon: Settings, group: "Workspace" },
+  { label: "Profile", href: "/profile", icon: UserCircle, group: "Workspace" },
 ];
 
 export const kpiMetrics: KpiMetric[] = [

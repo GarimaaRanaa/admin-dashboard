@@ -6,16 +6,17 @@ interface ButtonProps {
   onClick?: () => void;
   variant?: "primary" | "secondary";
   type?: "button" | "submit";
+  disabled?: boolean;
 }
 
-export function Button({ label, onClick, variant = "primary", type = "button" }: ButtonProps) {
+export function Button({ label, onClick, variant = "primary", type = "button", disabled = false }: ButtonProps) {
   const style =
     variant === "primary"
-      ? { backgroundColor: theme.colors.primary, color: "#fff" }
-      : { backgroundColor: "transparent", color: theme.colors.primary, border: `1px solid ${theme.colors.primary}` };
+      ? { backgroundColor: theme.colors.primary, color: "#fff", boxShadow: "0 8px 18px rgba(109, 93, 251, 0.18)" }
+      : { backgroundColor: "#fff", color: "#4f46b8", border: "1px solid #dedcf8" };
 
   return (
-    <button type={type} onClick={onClick} style={style} className="px-4 py-2 rounded-md font-medium">
+    <button type={type} onClick={onClick} disabled={disabled} style={style} className="rounded-xl px-4 py-2.5 text-sm font-semibold transition hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0">
       {label}
     </button>
   );

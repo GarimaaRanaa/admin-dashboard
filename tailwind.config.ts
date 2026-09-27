@@ -6,9 +6,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#B11226",
-        secondary: "#000000",
-        accent: "#D4AF37",
+        primary: "#6D5DFB",
+        secondary: "#12152B",
+        accent: "#9B8CFF",
+      },
+      boxShadow: {
+        panel: "0 1px 2px rgba(15, 23, 42, 0.03), 0 12px 30px rgba(15, 23, 42, 0.04)",
       },
     },
   },

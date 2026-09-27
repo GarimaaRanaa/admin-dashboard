@@ -1,5 +1,8 @@
 node_modules
 .next
+.next-stale-*
 out
 .env.local
 .DS_Store
+tmp/
+*.inspect.ndjson

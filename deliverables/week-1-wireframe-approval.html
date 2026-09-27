@@ -1,0 +1,498 @@
+<div class="figma-board">
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Frontend Developer #1</p>
+      <h1>Week 1 Wireframe Approval</h1>
+      <p class="subtitle">Universal Admin Dashboard Theme - reusable admin UI system</p>
+    </div>
+    <div class="approval">
+      <span class="dot"></span>
+      Approved for Week 2 Build
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="frame">
+      <div class="frame-label">Desktop Dashboard Wireframe - 1440px</div>
+      <div class="browser">
+        <div class="browser-bar">
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="url">localhost:3000 / Admin Dashboard Theme</div>
+        </div>
+        <div class="app">
+          <aside class="sidebar">
+            <div class="brand"></div>
+            <div class="nav active"></div>
+            <div class="nav"></div>
+            <div class="nav"></div>
+            <div class="nav"></div>
+            <div class="nav small"></div>
+          </aside>
+          <section class="page">
+            <div class="page-header">
+              <div>
+                <div class="label-line"></div>
+                <div class="title-line"></div>
+                <div class="sub-line"></div>
+              </div>
+              <div class="button"></div>
+            </div>
+            <div class="kpis">
+              <div class="kpi"></div>
+              <div class="kpi"></div>
+              <div class="kpi"></div>
+              <div class="kpi"></div>
+            </div>
+            <div class="middle">
+              <div class="chart">
+                <div class="chart-title"></div>
+                <div class="bars">
+                  <span style="height: 42%"></span>
+                  <span style="height: 64%"></span>
+                  <span style="height: 55%"></span>
+                  <span style="height: 82%"></span>
+                  <span style="height: 74%"></span>
+                  <span style="height: 92%"></span>
+                  <span style="height: 84%"></span>
+                </div>
+              </div>
+              <div class="activity">
+                <div class="chart-title"></div>
+                <div class="activity-row"></div>
+                <div class="activity-row"></div>
+                <div class="activity-row"></div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="table">
+                <div class="chart-title"></div>
+                <div class="table-line head"></div>
+                <div class="table-line"></div>
+                <div class="table-line"></div>
+                <div class="table-line"></div>
+              </div>
+              <div class="actions">
+                <div class="chart-title"></div>
+                <div class="action-grid">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <aside class="notes">
+      <section>
+        <h2>Week 1 Completed</h2>
+        <ul>
+          <li><strong>Day 1:</strong> Project guide reviewed</li>
+          <li><strong>Day 2:</strong> Starter setup completed</li>
+          <li><strong>Day 3:</strong> TypeScript basics reviewed</li>
+          <li><strong>Day 4:</strong> Admin sitemap finalized</li>
+          <li><strong>Day 5:</strong> Wireframe approved</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Approved Homepage Flow</h2>
+        <div class="flow">
+          <span>Navbar</span>
+          <span>Sidebar</span>
+          <span>Page Header</span>
+          <span>KPI Cards</span>
+          <span>Charts</span>
+          <span>Recent Activity</span>
+          <span>Recent Records</span>
+          <span>Quick Actions</span>
+        </div>
+      </section>
+
+      <section class="stamp">
+        <p>Approval Note</p>
+        <strong>Ready to start Week 2 homepage sections.</strong>
+        <small>Branch: feature/project-setup<br />Commit: cade797</small>
+      </section>
+    </aside>
+  </main>
+</div>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: #eef2f6;
+    color: #172033;
+    font-family: Inter, Arial, sans-serif;
+  }
+
+  .figma-board {
+    width: 1920px;
+    height: 1080px;
+    padding: 48px 64px;
+    background:
+      linear-gradient(rgba(64, 74, 92, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(64, 74, 92, 0.08) 1px, transparent 1px),
+      #f6f8fb;
+    background-size: 32px 32px;
+  }
+
+  .topbar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  .eyebrow {
+    margin: 0 0 8px;
+    color: #b11226;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 52px;
+    line-height: 1.05;
+    letter-spacing: 0;
+  }
+
+  .subtitle {
+    margin: 14px 0 0;
+    color: #5c667a;
+    font-size: 22px;
+  }
+
+  .approval {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid #9fefc2;
+    border-radius: 14px;
+    background: #e8fff1;
+    color: #166534;
+    padding: 18px 22px;
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    background: #22c55e;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 440px;
+    gap: 36px;
+  }
+
+  .frame,
+  .notes section {
+    border: 2px solid #d7dce6;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.12);
+  }
+
+  .frame {
+    padding: 22px;
+  }
+
+  .frame-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    border-radius: 999px;
+    background: #172033;
+    color: #ffffff;
+    padding: 10px 18px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .browser {
+    overflow: hidden;
+    border: 2px solid #cfd6e3;
+    border-radius: 14px;
+    background: #f8fafc;
+  }
+
+  .browser-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 48px;
+    border-bottom: 2px solid #d8dee9;
+    padding: 0 16px;
+  }
+
+  .browser-bar span {
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    background: #b7c0cf;
+  }
+
+  .url {
+    margin-left: 14px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #6b7280;
+    padding: 8px 18px;
+    width: 520px;
+    font-size: 15px;
+  }
+
+  .app {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    height: 690px;
+  }
+
+  .sidebar {
+    border-right: 2px solid #d8dee9;
+    background: #101827;
+    padding: 28px 18px;
+  }
+
+  .brand {
+    height: 44px;
+    border-radius: 10px;
+    background: #ffffff;
+    opacity: 0.95;
+    margin-bottom: 36px;
+  }
+
+  .nav {
+    height: 44px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.24);
+  }
+
+  .nav.active {
+    background: #b11226;
+  }
+
+  .nav.small {
+    width: 70%;
+  }
+
+  .page {
+    padding: 24px;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 18px;
+  }
+
+  .label-line,
+  .title-line,
+  .sub-line,
+  .button,
+  .kpi,
+  .chart,
+  .activity,
+  .table,
+  .actions {
+    border-radius: 10px;
+    background: #e5eaf2;
+  }
+
+  .label-line {
+    width: 150px;
+    height: 16px;
+    margin-bottom: 12px;
+    background: #d4af37;
+  }
+
+  .title-line {
+    width: 360px;
+    height: 34px;
+    margin-bottom: 12px;
+    background: #172033;
+  }
+
+  .sub-line {
+    width: 520px;
+    height: 18px;
+  }
+
+  .button {
+    width: 150px;
+    height: 46px;
+    background: #b11226;
+  }
+
+  .kpis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 22px;
+  }
+
+  .kpi {
+    height: 92px;
+    background: #ffffff;
+    border: 2px solid #d8dee9;
+  }
+
+  .middle,
+  .bottom {
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    gap: 22px;
+    margin-bottom: 18px;
+  }
+
+  .chart,
+  .activity,
+  .table,
+  .actions {
+    border: 2px solid #d8dee9;
+    background: #ffffff;
+    padding: 22px;
+  }
+
+  .chart,
+  .activity {
+    height: 220px;
+  }
+
+  .table,
+  .actions {
+    height: 168px;
+  }
+
+  .chart-title {
+    width: 190px;
+    height: 20px;
+    border-radius: 8px;
+    background: #172033;
+    margin-bottom: 22px;
+  }
+
+  .bars {
+    display: flex;
+    align-items: end;
+    gap: 14px;
+    height: 142px;
+  }
+
+  .bars span {
+    flex: 1;
+    border-radius: 9px 9px 0 0;
+    background: #b11226;
+  }
+
+  .activity-row {
+    height: 42px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background: #eef2f6;
+  }
+
+  .table-line {
+    height: 28px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    background: #eef2f6;
+  }
+
+  .table-line.head {
+    background: #d7dce6;
+  }
+
+  .action-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .action-grid span {
+    height: 48px;
+    border-radius: 8px;
+    background: #f3e7e9;
+  }
+
+  .notes {
+    display: grid;
+    gap: 22px;
+  }
+
+  .notes section {
+    padding: 22px 26px;
+  }
+
+  h2 {
+    margin: 0 0 14px;
+    font-size: 24px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 22px;
+    color: #3f4858;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .flow span {
+    border: 1px solid #d7dce6;
+    border-radius: 999px;
+    background: #f8fafc;
+    padding: 9px 12px;
+    color: #374151;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .stamp {
+    border-color: #b11226 !important;
+  }
+
+  .stamp p {
+    margin: 0 0 10px;
+    color: #b11226;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .stamp strong {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 23px;
+    line-height: 1.25;
+  }
+
+  .stamp small {
+    color: #5c667a;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+</style>

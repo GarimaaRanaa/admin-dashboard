@@ -5,6 +5,7 @@ export interface NavItem {
   label: string;
   href: string;
   icon?: LucideIcon;
+  group?: "Overview" | "Management" | "Workspace";
 }
 
 export interface KpiMetric {
