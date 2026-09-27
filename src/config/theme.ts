@@ -1,6 +1,6 @@
 // theme.ts — the ONE file that makes this codebase reusable for a new client. Change brand name / colors / feature flags here — never inside a component.
 export const theme = {
-  brandName: "Nexa Admin",
+  brandName: "Admin",
   brandTagline: "Universal workspace",
   colors: {
     primary: "#6D5DFB",
